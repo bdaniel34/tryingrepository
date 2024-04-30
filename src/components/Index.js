@@ -2,11 +2,7 @@ import { useState } from "react";
 import "./Css.css";
 import Click from "./Click";
 import Backdrop from "./Backdrop";
-
-
-
-
-function Info (props){
+function Info (){
  const [fondo, setfondo] = useState()
 
   function pulsador (){
@@ -17,7 +13,7 @@ function Info (props){
   }
     return(
      <div className="card">
-       <h2>{props.text}</h2>
+       
        <div className="actions">
         <button className="btn" onClick={pulsador}>Play</button>
         </div>
